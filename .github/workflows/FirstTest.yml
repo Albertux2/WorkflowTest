@@ -6,9 +6,11 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - name: "This should execute!!"
-        run: 'pwd'
+      - name: "Checkout repository"
+        uses: actions/checkout@v3
+      - name: "Show myFile contents"
+        run: "cat myFile"
