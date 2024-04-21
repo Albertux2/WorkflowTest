@@ -1,0 +1,7 @@
+environments:
+  preint:
+    countries:
+      es: true
+  pro:
+    countries:
+      es: false
