@@ -14,6 +14,4 @@ jobs:
         uses: actions/checkout@v3
       - name: "Retrieve deployment configuration"
         id: deploy
-        run: echo "DEPLOY=$(cat deploy.yml)"
-      - name: "Show deployment configuration"
-        run: "echo '${{ env.DEPLOY }}'"
+        run: echo "DEPLOY=$(cat deploy.yml | yq '.environments[]')"

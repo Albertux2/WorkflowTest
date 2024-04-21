@@ -1,7 +1,11 @@
 environments:
   preint:
     countries:
-      es: true
+      - es
+      - pt
+      - en
+      - zh
   pro:
     countries:
-      es: false
+      - es
+      - zh
