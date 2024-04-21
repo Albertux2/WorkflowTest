@@ -1,11 +1,11 @@
 environments:
-  preint:
+  - name: preint
     countries:
       - es
       - pt
       - en
       - zh
-  pro:
+  - name: pro
     countries:
       - es
       - zh
