@@ -11,4 +11,4 @@ jobs:
 
     steps:
       - name: "This should execute!!"
-        run: 'ls ../../'
+        run: 'ls ../'
